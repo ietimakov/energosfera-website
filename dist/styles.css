@@ -45,9 +45,3 @@
 .hero-play .hero-lightning{animation:lightning-residual 2.2s 3.58s cubic-bezier(.35,.05,.2,1) forwards}
 @keyframes lightning-residual{0%{opacity:1;clip-path:inset(0 0 0 0)}38%{opacity:.18;clip-path:inset(0 34% 0 0)}100%{opacity:.065;clip-path:inset(0 49% 0 0)}}
 @media(prefers-reduced-motion:reduce){.hero-play .hero-lightning{display:none!important;animation:none!important}}
-/* Low-energy traces remain after the animated discharge, following the left-panel routes. */
-.hero-ambient-bolts{position:absolute;inset:0;z-index:3;width:100%;height:100%;pointer-events:none;opacity:0;clip-path:inset(0 49% 0 0)}
-.hero-ambient-bolts polyline{fill:none;stroke:#b9cf73;stroke-width:1.15;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 5px rgba(185,207,115,.25))}
-.hero-play .hero-ambient-bolts{animation:ambient-traces 2.8s 3.85s ease-out forwards}
-@keyframes ambient-traces{0%{opacity:0}18%{opacity:.18}100%{opacity:.06}}
-@media(prefers-reduced-motion:reduce){.hero-ambient-bolts{display:none!important}}
