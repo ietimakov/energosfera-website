@@ -41,3 +41,7 @@
 .bolt-core .bolt{stroke-width:1.55px;stroke-linecap:butt}
 .bolt-forks .bolt{stroke-width:.85px;stroke-opacity:.78;filter:url(#electric-fine)}
 .lightning-bolts:after{content:""}
+/* A nearly imperceptible residual charge stays in the left hero panel after the strike. */
+.hero-play .hero-lightning{animation:lightning-residual 2.2s 3.58s cubic-bezier(.35,.05,.2,1) forwards}
+@keyframes lightning-residual{0%{opacity:1;clip-path:inset(0 0 0 0)}38%{opacity:.18;clip-path:inset(0 34% 0 0)}100%{opacity:.065;clip-path:inset(0 49% 0 0)}}
+@media(prefers-reduced-motion:reduce){.hero-play .hero-lightning{display:none!important;animation:none!important}}
