@@ -8,3 +8,4 @@
 /* The cutout aligns with the vacancy counter divider; the redundant count is removed. */
 @media(min-width:761px){.career-hero-art{right:8%;width:min(40vw,615px)}}
 .career-hero .number{display:none}.career-hero aside{justify-content:flex-end}
+@media(min-width:761px){.career-hero-art{right:15%}}
