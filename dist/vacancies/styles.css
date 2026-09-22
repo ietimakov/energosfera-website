@@ -12,3 +12,5 @@
 /* Align the right contour of the engineer cutout with the vertical counter divider. */
 @media(min-width:761px){.career-hero-art{right:21%}}
 @media(min-width:761px){.career-hero-art{right:18.5%}}
+/* Anchor the cutout to the actual grid divider, independent of viewport width. */
+@media(min-width:761px){.career-hero-art{right:calc(var(--gutter) + 270px)}}
