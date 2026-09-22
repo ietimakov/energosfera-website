@@ -34,3 +34,10 @@
 .hero-copy>*:not(.copy-residual){z-index:2}
 .hero-play .bolt-text-5{animation-delay:1.72s}
 .hero-play .bolt-forks .bolt-text-5{animation-delay:1.83s}
+/* Organic electrical arc: a noisy filament, soft plasma halo and faint after-branches. */
+.lightning-bolts .bolt-aura{filter:url(#electric-jitter)}
+.lightning-bolts .bolt-core{filter:url(#electric-fine)}
+.bolt-aura .bolt{stroke-width:11px;stroke-opacity:.27}
+.bolt-core .bolt{stroke-width:1.55px;stroke-linecap:butt}
+.bolt-forks .bolt{stroke-width:.85px;stroke-opacity:.78;filter:url(#electric-fine)}
+.lightning-bolts:after{content:""}
