@@ -7,3 +7,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape' && navigation
 function revealService() { const target = document.getElementById(location.hash.slice(1)); if (target?.matches('details')) target.open = true; }
 window.addEventListener('hashchange', revealService);
 revealService();
+const hero = document.querySelector('.hero');
+if (hero && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  requestAnimationFrame(() => hero.classList.add('hero-play'));
+}
