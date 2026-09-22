@@ -9,3 +9,5 @@
 @media(min-width:761px){.career-hero-art{right:8%;width:min(40vw,615px)}}
 .career-hero .number{display:none}.career-hero aside{justify-content:flex-end}
 @media(min-width:761px){.career-hero-art{right:15%}}
+/* Align the right contour of the engineer cutout with the vertical counter divider. */
+@media(min-width:761px){.career-hero-art{right:21%}}
