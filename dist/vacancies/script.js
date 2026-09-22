@@ -1,0 +1,13 @@
+const menu = document.querySelector('.menu');
+const navigation = document.querySelector('#navigation');
+const modal = document.querySelector('#application-modal');
+const form = document.querySelector('#application-form');
+const vacancyInput = document.querySelector('#vacancy');
+const closeModal = () => { modal.classList.remove('open'); modal.setAttribute('aria-hidden', 'true'); document.body.style.overflow = ''; };
+const openModal = vacancy => { form.reset(); vacancyInput.value = vacancy; modal.classList.add('open'); modal.setAttribute('aria-hidden', 'false'); document.body.style.overflow = 'hidden'; modal.querySelector('input[name="name"]').focus(); };
+menu.addEventListener('click', () => { const open = navigation.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)); menu.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню'); });
+navigation.addEventListener('click', event => { if (event.target.closest('a')) { navigation.classList.remove('open'); menu.setAttribute('aria-expanded', 'false'); } });
+document.querySelectorAll('.apply').forEach(button => button.addEventListener('click', () => openModal(button.dataset.vacancy)));
+document.querySelectorAll('[data-close-modal]').forEach(button => button.addEventListener('click', closeModal));
+document.addEventListener('keydown', event => { if (event.key === 'Escape') { closeModal(); navigation.classList.remove('open'); menu.setAttribute('aria-expanded', 'false'); } });
+form.addEventListener('submit', event => { event.preventDefault(); if (!form.reportValidity()) return; const data = new FormData(form); const body = ['Вакансия: ' + data.get('vacancy'), 'Имя: ' + data.get('name'), 'Телефон: ' + data.get('phone'), 'Email: ' + data.get('email'), '', 'Опыт и комментарий:', data.get('message') || '—'].join('\n'); const subject = 'Отклик на вакансию: ' + data.get('vacancy'); window.location.href = 'mailto:info@en-sf.ru?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body); });
