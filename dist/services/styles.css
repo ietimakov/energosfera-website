@@ -13,3 +13,11 @@
 @media(max-width:720px){.services-hero{min-height:700px}.services-hero-note{position:absolute;left:var(--gutter);right:var(--gutter);bottom:22px;margin:0;padding:24px 0 0;border-left:0;border-top:1px solid #46515a;background:none;z-index:2}.services-hero-art{bottom:120px}}
 /* Align the equipment base with the voltage divider while extending the silhouette upward. */
 @media(max-width:720px){.services-hero{min-height:852px}.services-hero-art{bottom:272px}.services-hero-art img{height:550px!important}}
+
+/* Keep the supplied tightly cropped artwork in flow, with its base on the divider. */
+@media(max-width:720px){
+  .services-hero{display:block;min-height:0;padding-bottom:28px}
+  .services-hero-art{position:relative;left:auto;bottom:auto;width:100%;height:auto;margin:24px 0 0;opacity:1}
+  .services-hero-art img{width:100%!important;height:auto!important;max-width:100%;max-height:none}
+  .services-hero-note{position:relative;left:auto;right:auto;bottom:auto;min-width:0;margin:0;padding:24px 0 0;border-left:0;border-top:1px solid #46515a;background:none}
+}
