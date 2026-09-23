@@ -5,3 +5,5 @@
 @media(min-width:721px){.services-hero-art{width:min(50vw,760px);height:530px;bottom:-18px}}
 /* Mobile: enlarge the equipment cutout so it starts directly below the service description. */
 @media(max-width:720px){.services-hero-art{left:-4%;width:108%;height:390px;bottom:0}}
+/* The source PNG has a tall transparent canvas; scale its visible subject rather than its box. */
+@media(max-width:720px){.services-hero-art img{width:auto!important;height:460px!important;max-width:none;max-height:none}}
