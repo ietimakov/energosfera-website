@@ -11,3 +11,5 @@
 @media(max-width:720px){.services-hero{min-height:510px}}
 /* Mobile service hero: the equipment rests exactly on the 220 kV divider. */
 @media(max-width:720px){.services-hero{min-height:700px}.services-hero-note{position:absolute;left:var(--gutter);right:var(--gutter);bottom:22px;margin:0;padding:24px 0 0;border-left:0;border-top:1px solid #46515a;background:none;z-index:2}.services-hero-art{bottom:120px}}
+/* Align the equipment base with the voltage divider while extending the silhouette upward. */
+@media(max-width:720px){.services-hero{min-height:852px}.services-hero-art{bottom:272px}.services-hero-art img{height:550px!important}}
