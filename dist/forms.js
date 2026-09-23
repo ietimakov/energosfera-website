@@ -16,7 +16,7 @@ document.querySelectorAll('[data-telegram-form]').forEach(form => {
       const response = await fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ kind: form.dataset.formKind, name: data.name, phone: data.phone, message: data.message, vacancy: data.vacancy, consent: data.consent === 'on' }) });
       if (!response.ok) throw new Error('request failed');
       form.reset();
-      status.textContent = 'Спасибо! Заявка отправлена, мы свяжемся с вами.';
+      status.textContent = 'Спасибо! Заявка отправлена. Мы свяжемся с вами.';
       status.classList.add('success');
     } catch {
       status.textContent = 'Не удалось отправить заявку. Позвоните нам: +7 (993) 141-90-20.';
