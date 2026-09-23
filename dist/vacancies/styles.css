@@ -14,3 +14,6 @@
 @media(min-width:761px){.career-hero-art{right:18.5%}}
 /* Anchor the cutout to the actual grid divider, independent of viewport width. */
 @media(min-width:761px){.career-hero-art{right:calc(var(--gutter) + 270px)}}
+/* Unified masthead scale across the site. */
+@media(min-width:761px){.header{height:132px}.header .brand img{width:120px;height:120px}.header .brand span{font-size:17.333px;line-height:1.32}}
+@media(max-width:760px){.header{height:98px}.header .brand img{width:92px;height:92px}.header .brand span{font-size:15.333px;line-height:1.32}nav{top:98px}}
