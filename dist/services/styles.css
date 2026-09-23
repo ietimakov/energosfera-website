@@ -3,3 +3,5 @@
 @media(max-width:720px){.services-hero{min-height:590px}.services-hero-art{left:18%;width:78%;height:270px;bottom:25px;opacity:.88}.services-hero-note{position:relative;margin-top:215px;background:none}}
 /* Scale the cutout to meet the top edge of the desktop banner. */
 @media(min-width:721px){.services-hero-art{width:min(50vw,760px);height:530px;bottom:-18px}}
+/* Mobile: enlarge the equipment cutout so it starts directly below the service description. */
+@media(max-width:720px){.services-hero-art{left:-4%;width:108%;height:390px;bottom:0}}
