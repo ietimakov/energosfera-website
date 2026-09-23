@@ -79,3 +79,5 @@
 @media(max-width:720px){.contacts:before{background-size:48px 48px;mask-image:linear-gradient(120deg,transparent,#000 50%,transparent)}.contacts:after{width:360px;right:-210px;top:-45%}}
 /* The address marker uses the same lime fill as the other contact pictograms. */
 .contact-address .contact-icon svg{width:15px;height:15px;display:block;fill:currentColor}
+/* Extra breathing room for long service titles on narrow screens. */
+@media(max-width:720px){.service summary .service-photo{right:12px!important;width:98px!important;height:98px!important}}
