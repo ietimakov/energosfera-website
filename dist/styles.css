@@ -81,3 +81,8 @@
 .contact-address .contact-icon svg{width:15px;height:15px;display:block;fill:currentColor}
 /* Extra breathing room for long service titles on narrow screens. */
 @media(max-width:720px){.service summary .service-photo{right:12px!important;width:98px!important;height:98px!important}}
+/* Client revision: keep the services CTA in one horizontal composition. */
+@media(min-width:721px){.documents{grid-template-columns:minmax(0,1fr) minmax(210px,auto) minmax(260px,.72fr);gap:clamp(24px,4vw,72px);min-height:330px}.documents>div:nth-of-type(2){grid-column:1;grid-row:1;align-self:center}.documents>.button{grid-column:2;grid-row:1;align-self:center;justify-self:end;width:clamp(220px,18vw,300px);border:1px solid var(--ink)}.documents-typography{position:static;grid-column:3;grid-row:1;align-self:center;justify-self:stretch;transform:none;width:auto;text-align:left;pointer-events:none}}
+.about-logo{display:block;width:min(100%,220px);height:auto;max-height:190px;object-fit:contain;mix-blend-mode:multiply;margin:0 auto}
+@media(min-width:721px){.about-tech{opacity:.28}}
+@media(max-width:720px){.about-tech{opacity:.18}.about-logo{width:230px;max-height:170px;margin:0 0 0 auto}.documents>div:nth-of-type(2){grid-column:auto;grid-row:auto}.documents>.button{grid-column:auto;grid-row:auto;border:1px solid var(--ink)}}
