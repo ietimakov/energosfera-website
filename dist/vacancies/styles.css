@@ -29,3 +29,8 @@
 .practice-emphasis{font-size:17.333px;font-weight:700}
 .conditions p{text-align:center;align-items:center}
 .career-contact .button.light:hover{background:var(--lime);color:var(--ink)}
+.practice-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:70px;max-width:1000px}
+.practice-columns h4{margin-top:0}
+.practice-copy ul{padding-left:0;list-style:none}
+.practice-copy li{padding-left:17px;margin-bottom:8px}
+@media(max-width:760px){.practice-columns{grid-template-columns:1fr;gap:22px}}
