@@ -28,3 +28,4 @@
 @media(max-width:760px){.conditions{grid-template-columns:1fr 1fr;gap:7px;margin-top:-20px;padding-bottom:48px}.conditions p,.conditions p+ p,.conditions p:last-child{min-height:106px;padding:15px 14px;border:1px solid #2d4050;border-radius:6px}.conditions p span{font-size:18px}}
 .practice-emphasis{font-size:17.333px;font-weight:700}
 .conditions p{text-align:center;align-items:center}
+.career-contact .button.light:hover{background:var(--lime);color:var(--ink)}
