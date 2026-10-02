@@ -37,6 +37,6 @@ footer .brand-logo img{width:88px;height:88px}.brand-logo span{font-size:10px;le
 .service-group-collapsible .group-expand{position:relative;transition:transform .24s ease}
 .service-group-collapsible[open] .group-expand{transform:rotate(45deg)}
 .service-group-collapsible .group-expand:after{content:"Полный список раскроется по клику";position:absolute;z-index:5;right:calc(100% + 12px);top:50%;width:max-content;max-width:min(250px,70vw);padding:9px 12px;border-radius:3px;background:var(--lime);color:var(--ink);font-size:12px;font-weight:400;line-height:1.35;letter-spacing:0;white-space:normal;opacity:0;visibility:hidden;transform:translateY(-50%);transition:opacity .15s ease,visibility .15s ease,transform .24s ease;pointer-events:none}
-.service-group-collapsible[open] .group-expand:after{transform:translate(8px,-50%)}
+.service-group-collapsible[open] .group-expand:after{opacity:0;visibility:hidden;transform:translate(calc(100vw + 100%),-50%)}
 .service-group-collapsible>summary:hover .group-expand:after,.service-group-collapsible>summary:focus-visible .group-expand:after{opacity:1;visibility:visible}
-@media(prefers-reduced-motion:reduce){.service-group-collapsible>summary,.service-group-collapsible .group-expand{transition:none}}
+@media(prefers-reduced-motion:reduce){.service-group-collapsible>summary,.service-group-collapsible .group-expand,.service-group-collapsible .group-expand:after{transition:none}}
