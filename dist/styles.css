@@ -100,4 +100,4 @@
   .about-logo{width:100%;max-height:none;margin:0 auto;mix-blend-mode:multiply}
   .about-heading,.about-copy{position:relative;z-index:1}
 }
-@media(max-width:720px){.about-tags span:last-child{margin-left:auto;margin-right:auto}}
+@media(max-width:720px){.about-tags{justify-content:center}}
