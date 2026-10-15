@@ -1,0 +1,43 @@
+.header nav .active{border-bottom-color:var(--ink)}
+.document-hero{position:sticky;top:0;z-index:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:64px;min-height:408px;padding:24px var(--gutter);background:var(--navy);color:#fff;overflow:hidden}
+.document-hero h1{font-size:clamp(52px,5.6vw,88px);margin:0;line-height:1.05}
+.document-hero .eyebrow{color:#c4cdd2;margin-bottom:30px}
+.document-hero-art{width:min(100%,480px);justify-self:end}
+.document-hero-art img{display:block;width:100%;height:360px;object-fit:contain}
+.certificate-section{position:relative;z-index:1;padding:68px var(--gutter) 78px;background:var(--pale);scroll-margin-top:20px}
+.certificate-inner{max-width:1080px;margin:0 auto}
+.certificate-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;margin-bottom:34px}
+.certificate-heading>div{min-width:0;max-width:100%}
+.certificate-heading .eyebrow{font-size:11px;letter-spacing:1.3px;margin-bottom:22px}
+.certificate-heading h2{font-size:clamp(28px,2.7vw,42px);letter-spacing:-1.3px;line-height:1.15;font-weight:500;margin:0 0 18px}
+.certificate-meta{display:flex;flex-wrap:wrap;gap:8px;font-size:12px;color:var(--muted);margin:0;line-height:1.6}
+.document-download{flex-shrink:0;white-space:nowrap}
+.document-pages{display:flex;flex-direction:column;gap:28px}
+.document-page{margin:0;background:#fff;border:1px solid var(--line);box-shadow:0 8px 28px rgba(21,34,46,.05)}
+.document-page>a{display:block;cursor:zoom-in}
+.document-page img{display:block;width:100%;height:auto}
+.document-page figcaption{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 22px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.5}
+.document-page figcaption>span{letter-spacing:1px}
+.document-page figcaption a:hover,.document-bottom a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+.document-page figcaption a>span[aria-hidden]{margin-left:8px}
+.document-bottom{display:flex;justify-content:space-between;gap:24px;margin-top:32px;font-size:13px;line-height:1.6;color:var(--muted)}
+.document-bottom a{display:flex;align-items:center;gap:16px}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+footer{position:relative;z-index:1;background:#fff}
+@media(max-width:1050px){.document-hero{gap:32px}.certificate-heading{align-items:flex-start;flex-direction:column}}
+@media(max-width:720px){
+  .document-hero{grid-template-columns:1fr;gap:14px;min-height:0;padding:42px var(--gutter) 24px}
+  .document-hero h1{font-size:clamp(43px,10vw,64px);letter-spacing:-1.8px}
+  .document-hero .eyebrow{font-size:10px;letter-spacing:1.1px;margin-bottom:24px}
+  .document-hero-art{justify-self:center;width:100%}
+  .document-hero-art img{height:250px}
+  .certificate-section{padding:42px 16px 44px}
+  .certificate-heading{padding:0 8px;gap:24px;margin-bottom:28px}
+  .certificate-heading .eyebrow{font-size:10px;letter-spacing:1px;line-height:1.7;margin-bottom:18px}
+  .certificate-heading h2{font-size:clamp(25px,6.6vw,29px);letter-spacing:-1px}
+  .certificate-heading h2 br{display:none}
+  .document-pages{gap:20px}
+  .document-page figcaption{padding:13px 14px;font-size:11px}
+  .document-bottom{flex-direction:column;align-items:center;text-align:center;font-size:12px;gap:22px}
+}
+@media(prefers-reduced-motion:reduce){.document-hero{position:relative}}
