@@ -11,3 +11,26 @@ const hero = document.querySelector('.hero');
 if (hero && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   requestAnimationFrame(() => hero.classList.add('hero-play'));
 }
+
+document.querySelectorAll('[data-copy-email]').forEach(button => {
+  const status = button.parentElement.querySelector('.copy-email-status');
+  let resetTimer;
+  button.addEventListener('click', async () => {
+    clearTimeout(resetTimer);
+    try {
+      await navigator.clipboard.writeText(button.dataset.copyEmail);
+      button.classList.add('is-copied');
+      button.setAttribute('aria-label', 'Адрес электронной почты скопирован');
+      status.textContent = 'Скопировано';
+    } catch {
+      button.classList.remove('is-copied');
+      button.setAttribute('aria-label', 'Скопировать адрес электронной почты');
+      status.textContent = 'Не удалось скопировать. Выделите адрес вручную.';
+    }
+    resetTimer = setTimeout(() => {
+      button.classList.remove('is-copied');
+      button.setAttribute('aria-label', 'Скопировать адрес электронной почты');
+      status.textContent = '';
+    }, 2500);
+  });
+});
