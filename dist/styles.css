@@ -115,3 +115,4 @@
 .copy-email-status:empty{display:none}
 @media(max-width:720px){.copy-email,.contact-whatsapp{flex-basis:44px;width:44px;height:44px}}
 @media(prefers-reduced-motion:reduce){.copy-email,.contact-whatsapp{transition:none}}
+@media(min-width:721px){.contact-telegram>span:last-child{display:flex;align-items:center;min-height:36px}}
