@@ -36,7 +36,7 @@ document.querySelectorAll('[data-telegram-form]').forEach(form => {
       status.textContent = 'Спасибо! Заявка отправлена. Мы свяжемся с вами.';
       status.classList.add('success');
     } catch {
-      status.textContent = 'Не удалось отправить заявку. Позвоните нам: +7 (993) 141-90-20.';
+      status.textContent = 'Не удалось отправить заявку. Позвоните нам: +7 (937) 771-70-49.';
       status.classList.remove('success');
     } finally {
       submit.disabled = false;

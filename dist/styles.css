@@ -101,15 +101,17 @@
   .about-heading,.about-copy{position:relative;z-index:1}
 }
 @media(max-width:720px){.about-tags{flex-direction:column;align-items:center}}
-.contact-email{flex-wrap:wrap}
+.contact-email,.contact-phone{flex-wrap:wrap}
+.contact-phone-value{display:inline-flex;align-items:center;gap:8px;max-width:100%;text-align:left!important}
+.contact-phone-value>a:first-child{white-space:nowrap}
 .contact-email-value{position:relative;display:inline-flex;align-items:center;gap:8px;max-width:100%;text-align:left!important}
 .contact-email-value>a{min-width:0;overflow-wrap:anywhere}
-.copy-email{display:inline-grid;place-items:center;flex:0 0 36px;width:36px;height:36px;padding:8px;border:1px solid #61717c;border-radius:6px;background:transparent;color:var(--lime);transition:background-color .15s ease,border-color .15s ease}
-.copy-email:hover,.copy-email.is-copied{background:rgba(214,242,119,.12);border-color:var(--lime)}
-.copy-email svg{display:block;width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.copy-email,.contact-whatsapp{display:inline-grid;place-items:center;flex:0 0 36px;width:36px;height:36px;padding:8px;border:1px solid #61717c;border-radius:6px;background:transparent;color:var(--lime);transition:background-color .15s ease,border-color .15s ease}
+.copy-email:hover,.copy-email.is-copied,.contact-whatsapp:hover{background:rgba(214,242,119,.12);border-color:var(--lime)}
+.copy-email svg,.contact-whatsapp svg{display:block;width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .copy-email .copy-email-check,.copy-email.is-copied .copy-email-icon{display:none}
 .copy-email.is-copied .copy-email-check{display:block}
 .copy-email-status{position:absolute;z-index:2;right:0;bottom:calc(100% + 8px);max-width:min(260px,80vw);padding:7px 10px;border-radius:4px;background:var(--lime);color:var(--ink);font-size:12px;line-height:1.4;box-shadow:0 4px 16px #0002}
 .copy-email-status:empty{display:none}
-@media(max-width:720px){.copy-email{flex-basis:44px;width:44px;height:44px}}
-@media(prefers-reduced-motion:reduce){.copy-email{transition:none}}
+@media(max-width:720px){.copy-email,.contact-whatsapp{flex-basis:44px;width:44px;height:44px}}
+@media(prefers-reduced-motion:reduce){.copy-email,.contact-whatsapp{transition:none}}
